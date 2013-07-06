@@ -11,7 +11,7 @@ buffer = fs.readFileSync('index.html', function (err, data) {
   if (err) throw err;
 });
 
-  response.send(buffer.toString("utf-8"));
+  response.send(buffer.toString("utf8"));
 });
 
 var port = process.env.PORT || 5000;
